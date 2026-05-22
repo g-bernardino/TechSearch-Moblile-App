@@ -21,12 +21,12 @@ export default function TabNavigator() {
 
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: '#00b8cc', // Novo Azul/Ciano ativo
-        tabBarInactiveTintColor: '#666666', // Cinza para inativo
+        tabBarActiveTintColor: '#00b8cc', 
+        tabBarInactiveTintColor: '#666666', 
         
         tabBarStyle: {
-          backgroundColor: '#111111', // Fundo da barra inferior
-          borderTopColor: '#222222', // Linha de separação sutil
+          backgroundColor: '#111111', 
+          borderTopColor: '#222222', 
           height: Platform.OS === 'ios' ? 85 : 65,
           paddingBottom: Platform.OS === 'ios' ? 25 : 10,
           paddingTop: 5,
@@ -41,9 +41,9 @@ export default function TabNavigator() {
           elevation: 0, 
           shadowOpacity: 0,
           borderBottomWidth: 1,
-          borderBottomColor: '#222222' // Linha sutil separando o topo
+          borderBottomColor: '#222222' 
         },
-        headerTintColor: '#00b8cc', // Título no novo azul
+        headerTintColor: '#00b8cc', 
         headerTitleAlign: 'center',
         headerTitleStyle: { fontWeight: '700', fontSize: 20 },
       })}

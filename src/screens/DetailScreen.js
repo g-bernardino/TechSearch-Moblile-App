@@ -39,16 +39,16 @@ export default function DetailScreen({ route, navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#111111', // Fundo Global Escuro
+    backgroundColor: '#111111', 
   },
   imageContainer: {
     width: '100%',
     height: 300,
-    backgroundColor: '#1E1E1E', // Fundo do container levemente mais claro
+    backgroundColor: '#1E1E1E', 
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomWidth: 1,
-    borderBottomColor: '#333333', // Linha sutil de separação
+    borderBottomColor: '#333333', 
   },
   image: {
     width: '80%',
@@ -61,38 +61,38 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#FFFFFF', // Texto Branco
+    color: '#FFFFFF', 
     marginBottom: 8,
   },
   price: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#00b8cc', // Novo Ciano
+    color: '#00b8cc', 
     marginBottom: 20,
   },
   sectionTitle: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#9CA3AF', // Cinza claro
+    color: '#9CA3AF', 
     marginBottom: 8,
   },
   description: {
     fontSize: 16,
-    color: '#D1D5DB', // Cinza claríssimo para leitura
+    color: '#D1D5DB', 
     lineHeight: 24,
     marginBottom: 30,
   },
   buyButton: {
-    backgroundColor: '#00b8cc', // Botão Ciano
+    backgroundColor: '#00b8cc', 
     marginHorizontal: 20,
-    marginBottom: 40, // Espaço extra no final para rolar bem
+    marginBottom: 40, 
     paddingVertical: 16,
     borderRadius: 12,
     alignItems: 'center',
     elevation: 3,
   },
   buyButtonText: {
-    color: '#111111', // Texto Preto sobre fundo Claro
+    color: '#111111', 
     fontSize: 18,
     fontWeight: 'bold',
   },

@@ -5,7 +5,7 @@ export const mockProducts = [
     price: 6500.00,
     image: 'https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/oficinadosbits/media/uploads/produtos/foto/lkaarohv/file.png',
     description: 'Alta performance para compilar projetos complexos em React Native e gerenciar containers.',
-    category: 'hardware' // Nova propriedade
+    category: 'hardware' 
   },
   {
     id: '2',

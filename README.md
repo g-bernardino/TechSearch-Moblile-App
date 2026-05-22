@@ -61,11 +61,11 @@ O **TechSearch** é uma aplicação mobile de e-commerce voltada para o comérci
 ### 📸 Screenshots do App Funcionando
 
 <p align="center">
-  <img src="image.png" width="220" />
-  <img src="image-1.png" width="220" />
-  <img src="image-2.png" width="220" />
-  <img src="image-3.png" width="220" />
-  <img src="image-4.png" width="220" />
+  <img src="screenshots/image.png" width="220" />
+  <img src="screenshots/image-1.png" width="220" />
+  <img src="screenshots/image-2.png" width="220" />
+  <img src="screenshots/image-3.png" width="220" />
+  <img src="screenshots/image-4.png" width="220" />
 </p>
 
 ## 🇺🇸 English Version

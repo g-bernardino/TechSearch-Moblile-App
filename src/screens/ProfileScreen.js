@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#111111',
   },
   header: {
-    backgroundColor: '#1E1E1E', // Header do perfil escuro
+    backgroundColor: '#1E1E1E',     
     paddingVertical: 40,
     alignItems: 'center',
     borderBottomLeftRadius: 20,
@@ -88,13 +88,13 @@ const styles = StyleSheet.create({
     height: 110,
     borderRadius: 55,
     borderWidth: 3,
-    borderColor: '#00b8cc', // Borda ciano na foto
+    borderColor: '#00b8cc', 
   },
   editBadge: {
     position: 'absolute',
     right: 0,
     bottom: 5,
-    backgroundColor: '#00b8cc', // Badge ciano
+    backgroundColor: '#00b8cc', 
     width: 32,
     height: 32,
     borderRadius: 16,
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
   menuItem: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#1E1E1E', // Itens do menu escuros
+    backgroundColor: '#1E1E1E', 
     padding: 16,
     borderRadius: 8,
     marginBottom: 12,

@@ -57,7 +57,7 @@ export default function ListScreen({ route, navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#111111', // Fundo escuro
+    backgroundColor: '#111111', 
   },
   listContainer: {
     paddingVertical: 16,
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 20,
     paddingVertical: 12,
-    backgroundColor: '#1E1E1E', // Fundo do filtro escuro
+    backgroundColor: '#1E1E1E', 
     borderBottomWidth: 1,
     borderBottomColor: '#333333',
   },
@@ -78,16 +78,16 @@ const styles = StyleSheet.create({
   },
   filterHighlight: {
     fontWeight: 'bold',
-    color: '#00b8cc', // Destaque ciano
+    color: '#00b8cc', 
   },
   clearButton: {
-    backgroundColor: '#00b8cc', // Botão ciano
+    backgroundColor: '#00b8cc',
     paddingVertical: 6,
     paddingHorizontal: 12,
     borderRadius: 6,
   },
   clearButtonText: {
-    color: '#111111', // Texto escuro dentro do botão claro para contraste
+    color: '#111111', 
     fontSize: 12,
     fontWeight: 'bold',
   },

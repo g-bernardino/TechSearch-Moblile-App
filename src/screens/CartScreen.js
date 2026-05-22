@@ -138,20 +138,20 @@ const styles = StyleSheet.create({
   },
   payButton: {
     flexDirection: 'row',
-    backgroundColor: '#00b8cc', // Botão principal em ciano
+    backgroundColor: '#00b8cc', 
     paddingVertical: 16,
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
   },
   payButtonSuccess: {
-    backgroundColor: '#2E8B57', // Fica verde ao aprovar
+    backgroundColor: '#2E8B57', 
   },
   icon: {
     marginRight: 10,
   },
   payButtonText: {
-    color: '#111111', // Texto escuro sobre o ciano claro
+    color: '#111111', 
     fontSize: 18,
     fontWeight: 'bold',
   },

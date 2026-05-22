@@ -31,13 +31,13 @@ export default function HomeScreen({ navigation }) {
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       
-      {/* Header de Boas-Vindas */}
+    
       <View style={styles.welcomeHeader}>
         <Text style={styles.greeting}>Olá, Dev!</Text>
         <Text style={styles.subGreeting}>Encontre os melhores setups de hardware aqui.</Text>
       </View>
 
-      {/* Nova Posição do Sensor: Barra de Busca Inteligente por Imagem */}
+
       <View style={styles.searchSection}>
         <TouchableOpacity style={styles.fakeSearchInput} onPress={openCamera}>
           <Ionicons name="search-outline" size={20} color="#888" style={styles.searchIcon} />
@@ -48,7 +48,7 @@ export default function HomeScreen({ navigation }) {
         </TouchableOpacity>
       </View>
 
-      {/* Banner de Destaque */}
+
       <View style={styles.promoBanner}>
         <Ionicons name="flash" size={32} color="#FFF" style={styles.bannerIcon} />
         <View>
@@ -91,12 +91,12 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#111111', // NOVO FUNDO GLOBAL
+    backgroundColor: '#111111', 
   },
   welcomeHeader: {
     paddingHorizontal: 20,
     paddingVertical: 25,
-    backgroundColor: '#1E1E1E', // Fundo de card escuro para contrastar
+    backgroundColor: '#1E1E1E', 
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
     elevation: 2,
@@ -104,12 +104,12 @@ const styles = StyleSheet.create({
   greeting: {
     fontSize: 28,
     fontWeight: '800',
-    color: '#FFFFFF', // Texto Branco
+    color: '#FFFFFF', 
     letterSpacing: -0.5,
   },
   subGreeting: {
     fontSize: 15,
-    color: '#9CA3AF', // Cinza claro
+    color: '#9CA3AF', 
     marginTop: 2,
     fontWeight: '400',
   },
@@ -119,13 +119,13 @@ const styles = StyleSheet.create({
   },
   fakeSearchInput: {
     flexDirection: 'row',
-    backgroundColor: '#1E1E1E', // Card escuro
+    backgroundColor: '#1E1E1E', 
     borderRadius: 12,
     alignItems: 'center',
     paddingLeft: 16,
     height: 54,
     borderWidth: 1,
-    borderColor: '#333333', // Borda escura
+    borderColor: '#333333', 
   },
   searchIcon: {
     marginRight: 10,
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   cameraIconBadge: {
-    backgroundColor: '#00b8cc', // NOVO AZUL
+    backgroundColor: '#00b8cc', 
     height: '100%',
     width: 54,
     borderTopRightRadius: 11,
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   promoBanner: {
-    backgroundColor: '#00b8cc', // NOVO AZUL
+    backgroundColor: '#00b8cc', 
     marginHorizontal: 20,
     borderRadius: 16,
     padding: 20,
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#FFFFFF', // Texto Branco
+    color: '#FFFFFF', 
     marginHorizontal: 20,
     marginBottom: 14,
   },
@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   categoryCard: {
-    backgroundColor: '#1E1E1E', // Card escuro
+    backgroundColor: '#1E1E1E', 
     width: '30%',
     paddingVertical: 16,
     borderRadius: 12,
@@ -192,7 +192,7 @@ const styles = StyleSheet.create({
   categoryLabel: {
     fontSize: 12,
     fontWeight: '600',
-    color: '#D1D5DB', // Cinza clarinho
+    color: '#D1D5DB', 
     marginTop: 8,
   },
 });
