@@ -70,26 +70,9 @@ O **TechSearch** é uma aplicação mobile de e-commerce voltada para o comérci
 
 ### </> Estrutura Básica do Projeto
 
-MEU-ECOMMERCE/
-├── App.js (arquivo principal)
-├── app.json
-├── package.json
-├── README.md
-├── imagens_readme/ (screenshots do app)
-└── src/ (código-fonte principal)
-    ├── components/ (componentes reutilizáveis)
-    │   └── ProductCard.js
-    ├── data/ (dados simulados da loja)
-    │   └── mockProducts.js
-    ├── navigation/ (rotas e navegação)
-    │   ├── AppNavigator.js
-    │   └── TabNavigator.js
-    └── screens/ (pasta com as telas)
-        ├── CartScreen.js
-        ├── DetailScreen.js
-        ├── HomeScreen.js
-        ├── ListScreen.js
-        └── ProfileScreen.js
+<p align="center">
+  <img src="imagens_readme/pt-br.png" width="220" />
+</p>
 
 ## 🇺🇸 English Version
 
@@ -141,23 +124,6 @@ MEU-ECOMMERCE/
 
 ### </> Basic Project Structure
 
-MEU-ECOMMERCE/
-├── App.js (main file)
-├── app.json
-├── package.json
-├── README.md
-├── imagens_readme/ (app screenshots)
-└── src/ (main source code)
-    ├── components/ (reusable components)
-    │   └── ProductCard.js
-    ├── data/ (mock store data)
-    │   └── mockProducts.js
-    ├── navigation/ (routes and navigation)
-    │   ├── AppNavigator.js
-    │   └── TabNavigator.js
-    └── screens/ (screens folder)
-        ├── CartScreen.js
-        ├── DetailScreen.js
-        ├── HomeScreen.js
-        ├── ListScreen.js
-        └── ProfileScreen.js
+<p align="center">
+  <img src="imagens_readme/en-us.png" width="220" />
+</p>
