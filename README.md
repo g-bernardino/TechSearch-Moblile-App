@@ -1,50 +1,113 @@
-# Welcome to your Expo app 👋
+# TechSearch Mobile - E-Commerce App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 🎓 Alunos Envolvidos:
+   01847870 - Bruno José Silva de Lima
+   01855540 - Guilherme Bernardino Fernandes de Oliveira
+   01849774 - João Victhor dos Santos Silva 
+   01846088 - Kauã Henrique Marques da Silva
+   01888929 - Nícolas Tenório dos Santos de Lima
+   01839709 - Thiago Romero Ferres Gomes de Lima
 
-## Get started
+Instituição: Uninassau - Graças (Recife, PE)
 
-1. Install dependencies
+Curso: Ciência da Computação - Noite (GRA0790103NNB)
 
-   ```bash
-   npm install
-   ```
+Disciplina: Programação - Mobile Coding
 
-2. Start the app
+Professor: Diogo Francisco Borba Rodrigues
 
-   ```bash
-   npx expo start
-   ```
+[![pt-br](https://img.shields.io/badge/Language-Portuguese-green.svg)](#-versão-em-português)
+[![en](https://img.shields.io/badge/Language-English-blue.svg)](#-english-version)
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## pt-br Versão em Português
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Visão Geral do Projeto
+O **TechSearch** é uma aplicação mobile de e-commerce voltada para o comércio de hardware, smartphones e periféricos. O projeto adota uma interface moderna baseada no padrão *Dark Mode*, priorizando uma experiência de usuário (UX) fluida e de alto contraste. O sistema integra navegação hierárquica e a utilização de sensores nativos do dispositivo móvel para simular um ambiente de compras funcional e seguro.
 
-## Get a fresh project
+### Principais Funcionalidades
+* **Interface Moderna e Responsiva:** Estilização desenvolvida via StyleSheet com paleta de cores unificada em Dark Mode (`#111111` e `#00b8cc`).
+* **Catálogo de Produtos:** Listagem dinâmica e otimizada de produtos através do componente `FlatList`.
+* **Sistema de Filtros:** Navegação baseada em parâmetros para filtragem eficiente entre categorias (Hardware, Smartphones e Periféricos).
+* **Arquitetura de Navegação:** Implementação combinada de `Bottom Tab Navigator` para as sessões principais e `Stack Navigator` para o fluxo de checkout e detalhes.
+* **Detalhamento de Entidades:** Visualização aprofundada de produtos com tráfego de dados via parâmetros de rota.
+* **Gestão de Perfil:** Interface de usuário com suporte para upload e atualização de imagem de avatar.
+* **Fluxo de Pagamento Seguro:** Simulação de carrinho de compras condicionada à autenticação do usuário em nível de sistema operativo.
 
-When you're ready, run:
+### Stack Tecnológico
+* [React Native](https://reactnative.dev/)
+* [Expo](https://expo.dev/)
+* [React Navigation](https://reactnavigation.org/) (Stack & Bottom Tabs)
+* JavaScript / ES6+
 
-```bash
-npm run reset-project
-```
+### Integrações de Hardware e APIs Nativas
+* **Câmera e Sistema de Arquivos (`expo-image-picker`):** Implementada na tela inicial (simulação de busca computacional por imagem) e na tela de Perfil (acesso à galeria do dispositivo para personalização de avatar).
+* **Autenticação Biométrica (`expo-local-authentication`):** Exigência de validação via biometria (Face ID ou Impressão Digital nativos do aparelho) como etapa de segurança para a conclusão de transações no carrinho de compras.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Guia de Instalação e Execução
 
-## Learn more
+1. Realize o clone deste repositório para o seu ambiente local.
+2. Acesse o diretório do projeto via terminal e instale as dependências:
+   
+   ```npm install```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Inicialize o servidor de desenvolvimento:
+   
+   ```npx expo start```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+4. Utilize o aplicativo Expo Go em seu dispositivo móvel para escanear o QR Code gerado e executar a aplicação.
 
-## Join the community
+### 📸 Screenshots do App Funcionando
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
 
-Join our community of developers creating universal apps.
+## 🇺🇸 English Version
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# TechSearch Mobile - E-Commerce App
+
+### Project Overview
+**TechSearch** is a mobile e-commerce application focused on hardware, smartphones, and peripherals. The project adopts a modern *Dark Mode* interface, prioritizing a fluid, high-contrast user experience (UX). The system integrates hierarchical navigation and utilizes native mobile hardware sensors to simulate a functional and secure shopping environment.
+
+### Key Features
+* **Modern & Responsive UI:** StyleSheet-based design unified under a Dark Mode color palette (`#111111` and `#00b8cc`).
+* **Product Catalog:** Optimized and dynamic rendering of products using the `FlatList` component.
+* **Filtering System:** Parameter-based navigation for efficient filtering between categories (Hardware, Smartphones, and Peripherals).
+* **Navigation Architecture:** Combined implementation of `Bottom Tab Navigator` for primary sections and `Stack Navigator` for the checkout and detail flows.
+* **Entity Detailing:** In-depth product view utilizing route parameter data passing.
+* **Profile Management:** User interface supporting avatar image upload and update.
+* **Secure Payment Flow:** Shopping cart simulation strictly conditioned to user authentication at the operating system level.
+
+### Tech Stack
+* [React Native](https://reactnative.dev/)
+* [Expo](https://expo.dev/)
+* [React Navigation](https://reactnavigation.org/) (Stack & Bottom Tabs)
+* JavaScript / ES6+
+
+### Hardware Integrations & Native APIs
+* **Camera & File System (`expo-image-picker`):** Implemented on the Home Screen (simulating computational image search) and Profile Screen (device gallery access for avatar customization).
+* **Biometric Authentication (`expo-local-authentication`):** Mandatory validation via native biometrics (Face ID or Fingerprint) as a security measure to authorize transactions within the shopping cart.
+
+### Installation & Setup Guide
+
+1. Clone this repository to your local environment.
+2. Navigate to the project directory via terminal and install dependencies:
+   
+   ```npm install```
+3. Start the development server:
+   
+   ```npx expo start```
+
+4. Use the Expo Go application on your mobile device to scan the generated QR Code and launch the app.
+
+### 📸 Visual Demonstration
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+
+
