@@ -59,11 +59,14 @@ O **TechSearch** é uma aplicação mobile de e-commerce voltada para o comérci
 4. Utilize o aplicativo Expo Go em seu dispositivo móvel para escanear o QR Code gerado e executar a aplicação.
 
 ### 📸 Screenshots do App Funcionando
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
+
+<p align="center">
+  <img src="image.png" width="220" />
+  <img src="image-1.png" width="220" />
+  <img src="image-2.png" width="220" />
+  <img src="image-3.png" width="220" />
+  <img src="image-4.png" width="220" />
+</p>
 
 ## 🇺🇸 English Version
 
@@ -104,10 +107,12 @@ O **TechSearch** é uma aplicação mobile de e-commerce voltada para o comérci
 4. Use the Expo Go application on your mobile device to scan the generated QR Code and launch the app.
 
 ### 📸 Visual Demonstration
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
 
+<p align="center">
+  <img src="image.png" width="220" />
+  <img src="image-1.png" width="220" />
+  <img src="image-2.png" width="220" />
+  <img src="image-3.png" width="220" />
+  <img src="image-4.png" width="220" />
+</p>
 
