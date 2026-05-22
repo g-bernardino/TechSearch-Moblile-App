@@ -70,7 +70,7 @@ O **TechSearch** é uma aplicação mobile de e-commerce voltada para o comérci
 
 ### </> Estrutura Básica do Projeto
 
-<p align="center">
+<p>
   <img src="imagens_readme/pt-br.png" width="520" />
 </p>
 
@@ -124,6 +124,6 @@ O **TechSearch** é uma aplicação mobile de e-commerce voltada para o comérci
 
 ### </> Basic Project Structure
 
-<p align="center">
+<p>
   <img src="imagens_readme/en-us.png" width="520" />
 </p>
