@@ -4,7 +4,7 @@
     "slug": "meu-ecommerce",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./imagens_readme/icon.png",
     "scheme": "meuecommerce",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,16 +14,16 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./imagens_readme/icon.png",
+        "backgroundImage": "./imagens_readme/icon.png",
+        "monochromeImage": "./imagens_readme/icon.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./imagens_readme/icon.png"
     },
     "plugins": [
       "expo-router",

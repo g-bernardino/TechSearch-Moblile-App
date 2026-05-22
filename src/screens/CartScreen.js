@@ -1,57 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Alert, Image } from 'react-native';
 import * as LocalAuthentication from 'expo-local-authentication';
-import { Audio } from 'expo-av';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function CartScreen({ route, navigation }) {
   const { product } = route.params;
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [sound, setSound] = useState();
-
-  async function playSuccessSound() {
-    try {
-      await Audio.setAudioModeAsync({
-        playsInSilentModeIOS: true,
-        staysActiveInBackground: false,
-        shouldDuckAndroid: true,
-      });
-
-      const { sound: audioSound } = await Audio.Sound.createAsync(
-        require('../assets/sucesso.mp3')
-      );
-      setSound(audioSound);
-      await audioSound.playAsync();
-    } catch (error) {
-      console.log("Erro ao reproduzir o som: ", error);
-    }
-  }
-
-  useEffect(() => {
-    return sound ? () => { sound.unloadAsync(); } : undefined;
-  }, [sound]);
 
   const handlePayment = async () => {
+    // 1. Verifica se o aparelho tem sensor biométrico
     const hasHardware = await LocalAuthentication.hasHardwareAsync();
     if (!hasHardware) {
       Alert.alert('Erro', 'Seu dispositivo não possui sensor biométrico.');
       return;
     }
 
+    // 2. Verifica se há alguma digital/rosto cadastrado no aparelho
     const isEnrolled = await LocalAuthentication.isEnrolledAsync();
     if (!isEnrolled) {
       Alert.alert('Aviso', 'Nenhuma biometria cadastrada neste dispositivo.');
       return;
     }
 
+    // 3. Pede a autenticação
     const auth = await LocalAuthentication.authenticateAsync({
       promptMessage: 'Confirme sua identidade para pagar',
       fallbackLabel: 'Usar senha',
     });
 
+    // 4. Se der sucesso, finaliza a compra
     if (auth.success) {
       setIsAuthenticated(true);
-      await playSuccessSound();
 
       Alert.alert(
         'Pagamento Aprovado!', 
@@ -138,20 +117,20 @@ const styles = StyleSheet.create({
   },
   payButton: {
     flexDirection: 'row',
-    backgroundColor: '#00b8cc', 
+    backgroundColor: '#00b8cc',
     paddingVertical: 16,
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
   },
   payButtonSuccess: {
-    backgroundColor: '#2E8B57', 
+    backgroundColor: '#2E8B57', // Fica verde ao aprovar
   },
   icon: {
     marginRight: 10,
   },
   payButtonText: {
-    color: '#111111', 
+    color: '#111111',
     fontSize: 18,
     fontWeight: 'bold',
   },
