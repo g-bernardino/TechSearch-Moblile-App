@@ -61,12 +61,35 @@ O **TechSearch** é uma aplicação mobile de e-commerce voltada para o comérci
 ### 📸 Screenshots do App Funcionando
 
 <p align="center">
-  <img src="screenshots/image.png" width="220" />
-  <img src="screenshots/image-1.png" width="220" />
-  <img src="screenshots/image-2.png" width="220" />
-  <img src="screenshots/image-3.png" width="220" />
-  <img src="screenshots/image-4.png" width="220" />
+  <img src="imagens_readme/image.png" width="220" />
+  <img src="imagens_readme/image-1.png" width="220" />
+  <img src="imagens_readme/image-2.png" width="220" />
+  <img src="imagens_readme/image-3.png" width="220" />
+  <img src="imagens_readme/image-4.png" width="220" />
 </p>
+
+### </> Estrutura Básica do Projeto
+
+   MEU-ECOMMERCE/
+   ├── App.js (arquivo principal)
+   ├── app.json
+   ├── package.json
+   ├── README.md
+   ├── imagens_readme/ (screenshots do app)
+   └── src/ (código-fonte principal)
+      ├── components/ (componentes reutilizáveis)
+      │   └── ProductCard.js
+      ├── data/ (dados simulados da loja)
+      │   └── mockProducts.js
+      ├── navigation/ (rotas e navegação)
+      │   ├── AppNavigator.js
+      │   └── TabNavigator.js
+      └── screens/ (pasta com as telas)
+         ├── CartScreen.js
+         ├── DetailScreen.js
+         ├── HomeScreen.js
+         ├── ListScreen.js
+         └── ProfileScreen.js
 
 ## 🇺🇸 English Version
 
@@ -109,10 +132,32 @@ O **TechSearch** é uma aplicação mobile de e-commerce voltada para o comérci
 ### 📸 Visual Demonstration
 
 <p align="center">
-  <img src="image.png" width="220" />
-  <img src="image-1.png" width="220" />
-  <img src="image-2.png" width="220" />
-  <img src="image-3.png" width="220" />
-  <img src="image-4.png" width="220" />
+  <img src="imagens_readme/image.png" width="220" />
+  <img src="imagens_readme/image-1.png" width="220" />
+  <img src="imagens_readme/image-2.png" width="220" />
+  <img src="imagens_readme/image-3.png" width="220" />
+  <img src="imagens_readme/image-4.png" width="220" />
 </p>
 
+### </> Basic Project Structure
+
+   MEU-ECOMMERCE/
+   ├── App.js (main file)
+   ├── app.json
+   ├── package.json
+   ├── README.md
+   ├── imagens_readme/ (app screenshots)
+   └── src/ (main source code)
+      ├── components/ (reusable components)
+      │   └── ProductCard.js
+      ├── data/ (mock store data)
+      │   └── mockProducts.js
+      ├── navigation/ (routes and navigation)
+      │   ├── AppNavigator.js
+      │   └── TabNavigator.js
+      └── screens/ (screens folder)
+         ├── CartScreen.js
+         ├── DetailScreen.js
+         ├── HomeScreen.js
+         ├── ListScreen.js
+         └── ProfileScreen.js
