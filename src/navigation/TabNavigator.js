@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import HomeScreen from '../screens/HomeScreen';
 import ListScreen from '../screens/ListScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+import CartScreen from '../screens/CartScreen'; // <-- 1. Importamos o Carrinho
 
 const Tab = createBottomTabNavigator();
 
@@ -17,6 +18,7 @@ export default function TabNavigator() {
           let iconName;
           if (route.name === 'Home') iconName = focused ? 'home' : 'home-outline';
           else if (route.name === 'ProdutosTab') iconName = focused ? 'basket' : 'basket-outline';
+          else if (route.name === 'Carrinho') iconName = focused ? 'cart' : 'cart-outline'; // <-- 2. Adicionamos o ícone do Carrinho
           else if (route.name === 'Perfil') iconName = focused ? 'person' : 'person-outline';
 
           return <Ionicons name={iconName} size={size} color={color} />;
@@ -37,7 +39,7 @@ export default function TabNavigator() {
         },
 
         headerStyle: { 
-          backgroundColor: '#111111', // Fundo do header
+          backgroundColor: '#111111', 
           elevation: 0, 
           shadowOpacity: 0,
           borderBottomWidth: 1,
@@ -57,6 +59,12 @@ export default function TabNavigator() {
         name="ProdutosTab" 
         component={ListScreen} 
         options={{ headerTitle: 'Nossos Produtos', tabBarLabel: 'Produtos' }} 
+      />
+      {/* <-- 3. Adicionamos a aba do Carrinho aqui --> */}
+      <Tab.Screen 
+        name="Carrinho" 
+        component={CartScreen} 
+        options={{ headerTitle: 'Meu Carrinho', tabBarLabel: 'Carrinho' }} 
       />
       <Tab.Screen 
         name="Perfil" 
